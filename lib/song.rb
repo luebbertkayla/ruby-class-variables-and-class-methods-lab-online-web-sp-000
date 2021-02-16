@@ -29,5 +29,9 @@ class Song
   def genre_count
     genre_count = {}
     @@genres.each do |genre|
-      
+      if genre_count.include?(genre) == false 
+        genre_count[genre] = []
+      end 
+    end
+  end   
 end
